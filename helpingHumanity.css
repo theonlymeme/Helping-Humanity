@@ -1,0 +1,61 @@
+body{
+    background-color:lightgrey;
+}
+#mapSize{
+margin:50px;
+width:700px;
+height:700px;
+border:5px solid #000;
+background-color: white;
+}
+.circle {
+border: 2px solid blue;
+position: absolute;
+}
+.button{
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+.button1{
+color: black; 
+border: 2px solid #008CBA; 
+}
+.button2{
+color:black;
+border: 2px solid green;
+}
+.button3{
+color:black;
+border:2px dashed black;
+}
+.button4{
+color:black;
+border:2px solid red;
+}
+.button5{
+color:black;
+border:2px dashed red;
+position:relative;
+left: 50px;
+}
+.circle{
+text-align:center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#infoRoom{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 40px;
+position:relative;
+}
+.deleteRule{
+position: absolute;
+left:30px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

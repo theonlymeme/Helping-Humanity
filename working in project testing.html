@@ -149,13 +149,24 @@ function drawTriangle(mapSize) {
             mouse.startX = mouse.x;
             mouse.startY = mouse.y;
             //below is Element variable
-            element = document.createElement('input');
+            element = document.createElement('div');
 
             element.style.horizantalAlign="center"
             element.className = 'shape';
             element.style.fontSize="20px"
             element.style.left = mouse.x + 'px';
             element.style.top = mouse.y + 'px';
+            // element.style.width = '0px';
+            // element.style.height = '0px';
+            // element.style.content = 'transparent';
+            // element.style.borderLeftWidth = '500px';
+            // element.style.borderLeftColor = 'transparent';
+            // element.style.borderLeftStyle = 'solid';
+            // element.style.borderTopWidth = '0px';
+            // element.style.borderRightColor = 'transparent';
+            // element.style.borderRightWidth = '500px';
+            // element.style.borderTopColor = 'transparent';
+            // element.style.borderBottomWidth = '50px';
            //remove!!!! element.style.borderRadius = '50%';
             mapSize.appendChild(element)
             mapSize.style.cursor = "crosshair";

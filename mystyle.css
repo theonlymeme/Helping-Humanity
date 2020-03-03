@@ -6,8 +6,13 @@ body{
 display:flex;
 flex-wrap: wrap;
 justify-content: center;
-background-color: rgba(0, 0, 255, .5);
-margin:5%;
+background-color: rgba(0, 0, 255, 0.700);
+box-shadow: 5px 5px rgba(0, 0, 130, 0.500);
+border-radius: 30px;
+width: 500px;
+margin-top:50px;
+margin-bottom:50px;
+margin-left:40%;
 }
 .header{
 font-family: 'Fredoka One';
@@ -20,14 +25,85 @@ font-size: 50px;
     flex-wrap: nowrap;
     flex-direction:row;
 }
-#Information, #HomeMapper{
+/* #Information, #HomeMapper{
 background: red;
+} */
+
+#Information{
+    background: red;
+    border-top-color: rgb(238, 96, 96);
+    border-left-color: rgb(185, 53, 53);
+    border-bottom-color: rgb(187, 0, 0);
+    border-right-color: rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
+    border-radius: 6px;
+    border-style: outset;
 }
 
+#HomeMapper{
+    background: red;
+}
 
+.setFlexToAll {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
+.Introduction {
+    width: 48%;
+    order: -1;
+}
 
+.siteLink {
+    width: 48%;
+    order: 1;
+}
 
+p {
+    font-family: 'Fredoka One';
+}
+
+h2 {
+    color: red;
+    text-shadow: 2px 2px rgba(0, 0, 0, .700);
+    font-family: 'Fredoka One';
+}
+
+button {
+    border-top-color: rgb(238, 96, 96);
+    border-left-color: rgb(185, 53, 53);
+    border-bottom-color: rgb(187, 0, 0);
+    border-right-color: rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
+    outline: none;
+    border-radius: 6px;
+    border-style: outset;
+    font-family: 'Fredoka One';
+}
+
+button:hover {
+    border-top-color: rgb(255, 131, 131);
+    border-left-color: rgb(218, 47, 47);
+    border-bottom-color: rgb(212, 18, 18);
+    border-right-color: rgb(255, 66, 66);
+    background-color: rgb(255, 78, 78);
+    border-radius: 6px;
+    border-style: outset;
+    font-family: 'Fredoka One';
+}
+
+button:active {
+    border-top-color: rgb(184, 32, 32);
+    border-left-color: rgb(177, 0, 0);
+    border-bottom-color: rgb(223, 0, 0);
+    border-right-color: rgb(177, 0, 0);
+    background-color: darkred;
+    border-radius: 6px;
+    border-style: inset;
+    font-family: 'Fredoka One';
+}
 
 /*below stays at bottom*/
 .col-1 {width: 8.33%;}

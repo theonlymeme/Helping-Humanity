@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+body{
+    background-image: url("images/indexBackground.jpg");
+}
+.header-parent{
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+background-color: rgba(0, 0, 255, .5);
+margin:5%;
+}
+.header{
+font-family: 'Fredoka One';
+color:yellow;
+font-size: 50px;
+}
+
+.info-parent{
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction:row;
+}
+#Information, #HomeMapper{
+background: red;
+}
+
+
+
+
+
+
+/*below stays at bottom*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}

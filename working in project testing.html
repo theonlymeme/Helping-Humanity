@@ -74,6 +74,7 @@
     <button class="button button2" onclick="furnature(event)">Make furniture</button>
     <button class="button button4" >Make stairs</button>
     <button class="button button3" >Make door</button>
+    <button class=" button button5" onclick="makeTri()"> make triangle</button>
     <button class="button button5" onclick="reset()">Reset</button>
     <h2 id="infoRoom" style="display:none">now click then drag.</h2>
     <h3 class="deleteRule">To delete last object, just right click!</h3>
@@ -95,8 +96,78 @@
         document.getElementById("infoRoom").style.display="block";
          drawCircle(document.getElementById('mapSize'));
          console.log("clicked roomMaker");   }
+function makeTri(){
+    x=document.getElementById("mapSize")
+        document.getElementById("infoRoom").style.display="block";
+         drawTriangle(document.getElementById('mapSize'));
+         console.log("clicked roomMaker");
+}
 
 
+
+
+function drawTriangle(mapSize) {
+    function setMousePosition(e) {
+        var ev = e || window.event; //Moz || IE
+        if (ev.pageX) { //Moz
+            mouse.x = ev.pageX + window.pageXOffset;
+            mouse.y = ev.pageY + window.pageYOffset;
+        } else if (ev.clientX) { //IE
+            mouse.x = ev.clientX + document.body.scrollLeft;
+            mouse.y = ev.clientY + document.body.scrollTop;
+        }
+    };
+
+    var mouse = {
+        x: 0,
+        y: 0,
+        startX: 0,
+        startY: 0
+    };
+    var element = null;
+
+    mapSize.onmousemove = function () {
+        setMousePosition();
+        if (element !== null) {
+            element.style.width = Math.abs(mouse.x - mouse.startX) + 'px';
+            element.style.height = Math.abs(mouse.y - mouse.startY) + 'px';
+            element.style.left = (mouse.x - mouse.startX < 0) ? mouse.x + 'px' : mouse.startX + 'px';
+            element.style.top = (mouse.y - mouse.startY < 0) ? mouse.y + 'px' : mouse.startY + 'px';
+    }
+
+    mapSize.onclick = function () {
+        if (element !== null) {
+            
+            element = null;
+            mapSize.style.cursor = "block";
+            console.log("finished.");
+            element = !null
+            document.getElementById("infoRoom").style.display="none";
+            
+        } else {
+            console.log("begun.");
+            mouse.startX = mouse.x;
+            mouse.startY = mouse.y;
+            //below is Element variable
+            element = document.createElement('input');
+
+            element.style.horizantalAlign="center"
+            element.className = 'shape';
+            element.style.fontSize="20px"
+            element.style.left = mouse.x + 'px';
+            element.style.top = mouse.y + 'px';
+           //remove!!!! element.style.borderRadius = '50%';
+            mapSize.appendChild(element)
+            mapSize.style.cursor = "crosshair";
+            }
+        }
+    }
+}
+
+
+
+
+/*-----------------drawing circle-------------*/
 function drawCircle(mapSize) {
     function setMousePosition(e) {
         var ev = e || window.event; //Moz || IE
@@ -154,6 +225,9 @@ function drawCircle(mapSize) {
         }
     }
 }
+/*-----------------drawing circle-------------*/
+
+/*-----------------drawing square-------------*/
 function drawSquare(mapSize) {
     function setMousePosition(e) {
         var ev = e || window.event; //Moz || IE
@@ -219,6 +293,7 @@ oncontextmenu=function(e){
             e.preventDefault()
             eList[last].remove();
         }
+        /*-----------------drawing square-------------*/
 </script>
 
 </body>

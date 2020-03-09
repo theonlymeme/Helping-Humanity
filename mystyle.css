@@ -1,3 +1,16 @@
+.flex-row{
+    display:flex;
+    flex-wrap:flex;
+    flex-direction: row;
+}
+
+.flex-column{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
 #spacer{
     border-right: 3px solid;
 }

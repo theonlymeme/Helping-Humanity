@@ -1,0 +1,170 @@
+body{
+    background-color:lightgrey;
+}
+
+.displayRows{
+    display: flex;
+    flex-wrap: flex;
+    flex-direction: row;
+}
+
+.displayColumns{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.HomeMapper {
+    width: 500vh;
+    border: 2px solid deepskyblue;
+}
+
+.Instructions {
+    border: 2px solid darkseagreen;
+    font-family: 'Tahoma';
+    font-size: 15px;
+}
+
+.howToUse {
+    width: 70vh
+}
+
+summary {
+    outline: none;
+}
+
+    /* Tablet-friendly */
+    @media only screen and (max-width: 1280px) and (min-width: 800px) {
+
+        .displayRows {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .HomeMapper {
+            width: 100%;
+            border: 2px solid dodgerblue;
+        }
+        
+        .Instructions {
+            border: 2px solid greenyellow;
+        }
+
+        .howToUse {
+            width: 100%
+        }
+
+    }
+
+    /* Mobile-friendly */
+    @media only screen and (max-width: 800px) {
+
+        .displayRows {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .HomeMapper {
+            width: 100%;
+            border: 2px solid blue;
+        }
+        
+        .Instructions {
+            border: 2px solid green;
+        }
+
+        .howToUse {
+            width: 100%
+        }
+
+    }
+
+.title {
+    font-family: 'Segoe UI';
+}
+#mapSize{
+margin:50px;
+width:700px;
+height:700px;
+border:5px solid #000;
+background-color: white;
+}
+.shape {
+border: 2px solid blue;
+position: absolute;
+}
+.shape {
+border: 2px solid blue;
+position: absolute;
+}
+.button{
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+.button1{
+color: black; 
+border: 2px solid #008CBA; 
+outline: none;
+}
+.button2{
+color:black;
+border: 2px solid green;
+outline: none;
+}
+.button2-content{
+/*-----this is for dropdown menu-----*/ 
+display: contents;
+}
+.button3{
+color:black;
+border:2px dashed black;
+outline: none;
+}
+.button4{
+color:black;
+border:2px dashed red;
+outline: none;
+}
+.button5{
+color:black;
+border:2px solid red;
+outline: none;
+position:relative;
+left: 50px;
+}
+.button6{
+color:black;
+border:2px solid black;
+outline: none;
+position:relative;
+left: 50px;
+}
+.shape{
+text-align:center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#infoRoom{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 40px;
+position:relative;
+}
+.deleteRule{
+position: relative;
+left:30px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.shape{
+text-align:center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

@@ -1,4 +1,4 @@
-.flex-row{
+/* .flex-row{
     display:flex;
     flex-wrap:flex;
     flex-direction: row;
@@ -17,3 +17,14 @@
 body{
     background-color:rgba(25, 166, 183, 0.89);
 }
+summary {
+    outline: none;
+}
+.copyright {
+    color: black;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.200);
+    font-family: Tahoma;
+    font-weight: bold;
+    margin-bottom: -22px;
+    font-size: 11px;
+} */

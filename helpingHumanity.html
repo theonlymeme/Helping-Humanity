@@ -1,108 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="css/hmapper.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>House designing</title>
 </head>
-<body> 
-    <style>
-        body{
-            background-color:lightgrey;
-        }
-    #mapSize{
-        margin:50px;
-        width:700px;
-        height:700px;
-        border:5px solid #000;
-        background-color: white;
-    }
-    .shape {
-    border: 2px solid blue;
-    position: absolute;
-}
-.shape {
-    border: 2px solid blue;
-    position: absolute;
-}
-   .button{
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-    }
-    .button1{
-        color: black; 
-  border: 2px solid #008CBA; 
-    }
-    .button2{
-        color:black;
-    border: 2px solid green;
-    }
-    .button2-content{
-       /*-----this is for dropdown menu-----*/ 
-       display:none;
-    }
-    .button3{
-        color:black;
-    border:2px dashed black;
-    }
-    .button4{
-        color:black;
-    border:2px dashed red;
-    }
-    .button5{
-        color:black;
-    border:2px solid red;
-    position:relative;
-    left: 50px;
-    }
-    .button6{
-        color:black;
-    border:2px solid black;
-    position:relative;
-    left: 50px;
-    }
-    .shape{
-        text-align:center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    #infoRoom{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 40px;
-        position:relative;
-    }
-    .deleteRule{
-        position: absolute;
-        left:30px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    .shape{
-        text-align:center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    </style> 
-   <div id="mapSize"></div>
-    <button class="button button1" onclick="roomBox()">Make room</button>
-    <button class="button button2" onclick="furnature(event)">Make furniture</button>
-    <div class="button2-content">
-        <a onclick="triangle()"> triangle </a>
-         <a onclick="circle()"> circle </a>
-         <a onclick="square()"> square </a>
-    </div>
-    <button class="button button4" >Make stairs</button>
-    <button class="button button3" >Make door</button>
-    <button class="button button5" onclick="reset()">Reset</button>
-    <button class="button button6" onclick="window.location.href='index.html'"> back to website </button>
-    <h2 id="infoRoom" style="display:none">now click then drag.</h2>
-    <h3 class="deleteRule">To delete last object, just right click!</h3>
+<body>
+    <div class="displayRows">
+
+        <!-- Main Page -->
+        <div class="HomeMapper">
+            <h1 class="title">HomeMapper</h1>
+            <!-- Gets our canvas -->
+            <div id="mapSize"></div>
+            <!-- Makes our buttons -->
+            <button class="button button1" onclick="roomBox()">Make room</button>
+            <button class="button button2" onclick="furniture(event)">Make furniture</button>
+            <!-- This is for the drop-down menu that is currently not working -->
+                <div class="button2-content">
+                        <a onclick="triangle()"> Triangle </a>
+                        <a onclick="circle()"> Circle </a>
+                        <a onclick="square()"> Square </a>
+
+                    <!-- <select>
+                        <option value="triangle" onclick="triangle()"> Triangle </a>
+                        <option value="circle" onclick="circle()"> Circle </a>
+                        <option value="square" onclick="square()"> Square </a>
+                    </select> -->
+                </div>
+            <button class="button button4" onclick="alert('Sorry, this feature is not implemented yet!')">Make stairs</button>
+            <button class="button button3" onclick="alert('Sorry, this feature is not implemented yet!')">Make door</button>
+            <button class="button button5" onclick="reset()">Reset</button>
+            <button class="button button6" onclick="window.location.href='index.html'">Back to Main Page</button>
+            <h2 id="infoRoom" style="display:none">now click then drag.</h2>
+            <h3 class="deleteRule">To delete last object, just right click!</h3>
+        </div>
     
+        <!-- Instructions -->
+        <div class="Instructions">
+            <h1 class="title">How to use the HomeMapper</h1>
+            <p class="howToUse">To use the HomeMapper, all you have to do is press a button for any of the following items that are currently available: “Make Room”, and “Make Furniture”. Once you have selected that particular item, you will want to draw the object on the canvas in the desired location that you wanted to. BUT! Make sure that you carefully rearrange it and resize it as it should, otherwise you will potentially mess things up. Once you have found the correct size of your room, click on the canvas again to finish drawing that object in place. But, please be sure that you will only get one try at it, because once you finish placing that object, it will not be movable anymore. If you want to remove an object, click on the delete button and simply right click on that last selected object. That object will completely vanish afterwards.<br><br>To refresh the page, simply click on the Reset button. That will reload the page. Nuff said.</p>
+    
+            <details class="howToMake">
+                <summary>Making Rooms</summary>
+                <p>Please insert information here</p>
+            </details>
+            <br>
+            <details class="howToMake">
+                <summary>Making Furnitures</summary>
+                <p>Please insert information here</p>
+            </details>
+            <br>
+            <details class="howToMake">
+                <summary>Making Stairs</summary>
+                <p>Please insert information here</p>
+            </details>
+            <br>
+            <details class="howToMake">
+                <summary>Making Doors</summary>
+                <p>Please insert information here</p>
+            </details>
+        </div>
+    </div>
  
     <script >
 /*----Start of main function---------*/
@@ -115,7 +76,7 @@
    function reset(){
     self.location.replace(location)
    }
-   function furnature(){
+   function furniture(){
     x=document.getElementById("mapSize")
         document.getElementById("infoRoom").style.display="block";
          drawshape(document.getElementById('mapSize'));

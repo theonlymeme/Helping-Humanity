@@ -1,4 +1,5 @@
-/* .flex-row{
+/*premade flex displays*/
+.flex-row{
     display:flex;
     flex-wrap:flex;
     flex-direction: row;
@@ -9,7 +10,7 @@
     flex-wrap: wrap;
     flex-direction: column;
 }
-
+/*premade flex displays*/
 
 #spacer{
     border-right: 3px solid;
@@ -17,14 +18,37 @@
 body{
     background-color:rgba(25, 166, 183, 0.89);
 }
-summary {
-    outline: none;
+
+/*below is for the images in index*/
+#oafa{
+max-width:33vw;
+margin-right:4vw;
 }
-.copyright {
-    color: black;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.200);
-    font-family: Tahoma;
-    font-weight: bold;
-    margin-bottom: -22px;
-    font-size: 11px;
-} */
+#AF{
+    max-width:33vw;
+    margin-right:4vw;
+}
+#fisher{
+    max-width:33vw;
+}
+/*end of images*/
+
+/*below are images on How2*/
+#margaret1, #margaret2{
+    max-width:25vw;
+    margin-right:5px;
+}
+#bob1{
+    max-width:35vw;
+    margin-right:5px;
+}
+#bob2{
+    max-width:25vw;
+    margin-right:5px; 
+}
+#eveline1{
+    max-width:15vw;
+}
+#eveline2{
+    max-width:25vw;
+}

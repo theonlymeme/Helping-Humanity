@@ -32,3 +32,23 @@ margin-right:4vw;
     max-width:33vw;
 }
 /*end of images*/
+
+/*below are images on How2*/
+#margaret1, #margaret2{
+    max-width:25vw;
+    margin-right:5px;
+}
+#bob1{
+    max-width:35vw;
+    margin-right:5px;
+}
+#bob2{
+    max-width:25vw;
+    margin-right:5px; 
+}
+#eveline1{
+    max-width:15vw;
+}
+#eveline2{
+    max-width:25vw;
+}

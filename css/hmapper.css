@@ -124,7 +124,7 @@ outline: none;
 }
 .button2-content{
 /*-----this is for dropdown menu-----*/ 
-display: contents;
+display: none;
 }
 .button3{
 color:black;

@@ -157,37 +157,201 @@ text-shadow: 1.5px 1.5px rgb(0, 78, 104);
     text-shadow: 1.5px 1.5px rgb(0, 71, 95);
 }
 .button2{
-color:black;
+/* color:black;
 border: 2px solid green;
+outline: none; */
+border: 3px outset;
+background-color: rgb(0, 140, 0);
+/* border-color: rgb(0, 107, 143); */
+border-top-color: rgb(37, 178, 0);
+border-left-color: rgb(23, 118, 0);
+border-bottom-color: rgb(0, 107, 0);
+border-right-color: rgb(5, 149, 0);
+border-radius: 4px;
+padding: 14px 35px;
+color: white;
 outline: none;
+font-family: 'Tahoma';
+font-weight: bold;
+font-size: 15px;
+text-shadow: 1.5px 1.5px rgb(0, 78, 0);
+}
+.button2:hover {
+    background-color: rgb(37, 178, 0);
+    border-top-color: rgb(114, 204, 0);
+    border-left-color: rgb(25, 152, 0);
+    border-bottom-color: rgb(0, 154, 0);
+    border-right-color: rgb(75, 187, 0);
+    text-shadow: 1.5px 1.5px rgb(0, 106, 0);
+}
+.button2:active {
+    background-color: rgb(0, 143, 0);
+    border-top-color: rgb(18, 102, 0);
+    border-left-color: rgb(0, 153, 0);
+    border-bottom-color: rgb(0, 110, 0);
+    border-right-color: rgb(0, 88, 0);
+    border-style: inset;
+    text-shadow: 1.5px 1.5px rgb(0, 71, 0);
 }
 .button2-content{
 /*-----this is for dropdown menu-----*/ 
 display: none;
 }
 .button3{
-color:black;
+/* color:black;
 border:2px dashed black;
+outline: none; */
+
+border: 3px outset;
+background-color: rgb(186, 186, 186);
+/* border-color: rgb(0, 107, 143); */
+border-top-color: rgb(224, 224, 224);
+border-left-color: rgb(150, 150, 150);
+border-bottom-color: rgb(143, 143, 143);
+border-right-color: rgb(197, 197, 197);
+border-radius: 4px;
+padding: 14px 35px;
+color: rgb(214, 214, 214);
 outline: none;
+font-family: 'Tahoma';
+font-weight: bold;
+font-size: 15px;
+text-shadow: 1.5px 1.5px rgb(104, 104, 104);
+}
+.button3:hover {
+    background-color: rgb(224, 224, 224);
+    border-top-color: rgb(235, 235, 235);
+    border-left-color: rgb(194, 194, 194);
+    border-bottom-color: rgb(206, 206, 206);
+    border-right-color: rgb(224, 224, 224);
+    text-shadow: 1.5px 1.5px rgb(141, 141, 141);
+}
+.button3:active {
+    background-color: rgb(190, 190, 190);
+    border-top-color: rgb(129, 129, 129);
+    border-left-color: rgb(204, 204, 204);
+    border-bottom-color: rgb(146, 146, 146);
+    border-right-color: rgb(117, 117, 117);
+    border-style: inset;
+    text-shadow: 1.5px 1.5px rgb(95, 95, 95);
 }
 .button4{
-color:black;
+/* color:black;
 border:2px dashed red;
+outline: none; */
+
+border: 3px outset;
+background-color: rgb(186, 0, 0);
+/* border-color: rgb(0, 107, 143); */
+border-top-color: rgb(224, 0, 0);
+border-left-color: rgb(150, 0, 0);
+border-bottom-color: rgb(143, 0, 0);
+border-right-color: rgb(197, 0, 0);
+border-radius: 4px;
+padding: 14px 35px;
+color: rgb(180, 180, 180);
 outline: none;
+font-family: 'Tahoma';
+font-weight: bold;
+font-size: 15px;
+text-shadow: 1.5px 1.5px rgb(104, 0, 0);
+}
+.button4:hover {
+    background-color: rgb(224, 0, 0);
+    border-top-color: rgb(235, 0, 0);
+    border-left-color: rgb(194, 0, 0);
+    border-bottom-color: rgb(206, 0, 0);
+    border-right-color: rgb(224, 0, 0);
+    text-shadow: 1.5px 1.5px rgb(141, 0, 0);
+}
+.button4:active {
+    background-color: rgb(190, 0, 0);
+    border-top-color: rgb(129, 0, 0);
+    border-left-color: rgb(204, 0, 0);
+    border-bottom-color: rgb(146, 0, 0);
+    border-right-color: rgb(117, 0, 0);
+    border-style: inset;
+    text-shadow: 1.5px 1.5px rgb(95, 0, 0);
 }
 .button5{
-color:black;
+/* color:black;
 border:2px solid red;
+outline: none; */
+
+border: 3px outset;
+background-color: rgb(186, 0, 0);
+/* border-color: rgb(0, 107, 143); */
+border-top-color: rgb(224, 0, 0);
+border-left-color: rgb(150, 0, 0);
+border-bottom-color: rgb(143, 0, 0);
+border-right-color: rgb(197, 0, 0);
+border-radius: 4px;
+padding: 14px 35px;
+color: white;
 outline: none;
+font-family: 'Tahoma';
+font-weight: bold;
+font-size: 15px;
+text-shadow: 1.5px 1.5px rgb(104, 0, 0);
 position:relative;
 left: 50px;
 }
+.button5:hover {
+    background-color: rgb(224, 0, 0);
+    border-top-color: rgb(235, 0, 0);
+    border-left-color: rgb(194, 0, 0);
+    border-bottom-color: rgb(206, 0, 0);
+    border-right-color: rgb(224, 0, 0);
+    text-shadow: 1.5px 1.5px rgb(141, 0, 0);
+}
+.button5:active {
+    background-color: rgb(190, 0, 0);
+    border-top-color: rgb(129, 0, 0);
+    border-left-color: rgb(204, 0, 0);
+    border-bottom-color: rgb(146, 0, 0);
+    border-right-color: rgb(117, 0, 0);
+    border-style: inset;
+    text-shadow: 1.5px 1.5px rgb(95, 0, 0);
+}
 .button6{
-color:black;
+/* color:black;
 border:2px solid black;
+outline: none; */
+
+border: 3px outset;
+background-color: rgb(186, 186, 186);
+/* border-color: rgb(0, 107, 143); */
+border-top-color: rgb(224, 224, 224);
+border-left-color: rgb(150, 150, 150);
+border-bottom-color: rgb(143, 143, 143);
+border-right-color: rgb(197, 197, 197);
+border-radius: 4px;
+padding: 14px 35px;
+color: white;
 outline: none;
+font-family: 'Tahoma';
+font-weight: bold;
+font-size: 15px;
+text-shadow: 1.5px 1.5px rgb(104, 104, 104);
 position:relative;
 left: 50px;
+}
+.button6:hover {
+    background-color: rgb(224, 224, 224);
+    border-top-color: rgb(235, 235, 235);
+    border-left-color: rgb(194, 194, 194);
+    border-bottom-color: rgb(206, 206, 206);
+    border-right-color: rgb(224, 224, 224);
+    text-shadow: 1.5px 1.5px rgb(141, 141, 141);
+}
+.button6:active {
+    background-color: rgb(190, 190, 190);
+    border-top-color: rgb(129, 129, 129);
+    border-left-color: rgb(204, 204, 204);
+    border-bottom-color: rgb(146, 146, 146);
+    border-right-color: rgb(117, 117, 117);
+    border-style: inset;
+    text-shadow: 1.5px 1.5px rgb(95, 95, 95);
 }
 .shape{
 text-align:center;
